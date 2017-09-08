@@ -23,6 +23,6 @@ theme_gamplotlib <- function(){
 }
 
 
-
-ggQQplot(ppoints(100)) + theme_gamplotlib()
-ggPCAplot(pdata,c(1,2),batch="Sex",xlim = c(-1,1),ylim = c(-1,1)) + theme_gamplotlib() + scale_fill_gamplotlib() + scale_color_gamplotlib()
+#test
+#ggQQplot(ppoints(100)) + theme_gamplotlib()
+#ggPCAplot(pdata,c(1,2),batch="Sex",xlim = c(-1,1),ylim = c(-1,1)) + theme_gamplotlib() + #scale_fill_gamplotlib() + scale_color_gamplotlib()
