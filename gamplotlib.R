@@ -16,10 +16,24 @@ scale_color_gamplotlib <- function(){
   ))
 }
 
+scale_colour_gradient_gamplotlib <- function(){
+    structure(list(
+    scale_colour_gradient(low="#834041", high="#F97E86",
+			  space="Lab", na.value="grey50", guide="colourbar")
+  ))	
+}
+
+scale_fill_gradient_gamplotlib <- function(){
+    structure(list(
+    scale_colour_gradient(low="#834041", high="#F97E86",
+			  space="Lab", na.value="grey50", guide="colourbar")
+  ))	
+}
+
 theme_gamplotlib <- function(){
 	theme_bw() + 
-	theme(panel.grid.major = element_line(colour = "#F6F7F7"),
-	panel.grid.minor = element_line(colour = "#F6F7F7"))
+	theme(panel.grid.major = element_line(colour="#F6F7F7"),
+	panel.grid.minor = element_line(colour="#F6F7F7"))
 }
 
 
