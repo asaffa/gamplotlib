@@ -1,12 +1,17 @@
-TODO- calculate expected using ppoints
+TODO - genomic inflation
+TODO - calculate expected using ppoints
+TODO - option to color sig points
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-# R function to produce QQ plot in ggplot
+# R function to produce QQ plot using ggplot
+#
+#input: vector of p-values
+#ggplot object
 #
 # author. Ayden Saffari <ayden.saffari@lshtm.ac.uk>
 # affiliations. MRC ING, LSHTM, BBK
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 
-ggQQplot <- function(ps,ylim = c(0,5)) {
+ggQQplot <- function(ps, ylim = c(0,5)) {
 	
 	N <- length(ps)
 	df <- data.frame(observed=-log10(sort(ps)),
