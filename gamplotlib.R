@@ -16,7 +16,7 @@ scale_color_gamplotlib <- function(){
   ))
 }
 
-scale_colour_gradient_gamplotlib <- function(){
+scale_color_gradient_gamplotlib <- function(){
     structure(list(
     scale_colour_gradient(low="#834041", high="#F97E86",
 			  space="Lab", na.value="grey50", guide="colourbar")
