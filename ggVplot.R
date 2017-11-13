@@ -1,7 +1,6 @@
-#TODO - plot sig points on top of non sig
 #TODO - annotate names of sig results
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-# R function to produce Volcano plot using ggplot
+# R function for making a Volcano plot with ggplot2
 #
 #input: dataframe with columns for p-val, adjusted p val, and lfc (in that order)
 #ggplot object
@@ -37,6 +36,6 @@ ggVplot <- function(df, fdrcut = 0.1, lfccut = 1.0, xlim = c(-2,2), ylim = c(0,7
            	xlim(xlim[1],xlim[2]) +
 		geom_vline(aes(xintercept=lfcthresh,colour="lfcthresh"), linetype = "dashed") + 
 		geom_vline(aes(xintercept=-lfcthresh,colour="lfcthresh"), linetype = "dashed") + 
-		geom_hline(aes(yintercept=1.30103,colour="pthresh")) + 
+		geom_hline(aes(yintercept=pthresh,colour="pthresh")) + 
 		scale_color_manual(values=pal, ...)
 }
