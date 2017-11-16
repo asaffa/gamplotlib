@@ -17,8 +17,8 @@ ggVplot <- function(df, fdrcut = 0.1, lfccut = 1.0, xlim = c(-2,2), ylim = c(0,7
 	#create dataframe to pass to ggplot
     	res <- data.frame(logfc=pmax(xlim[1],pmin(xlim[2],df[,3])),
         			  p=pmin(-log10(df[,1]),ylim[2]),fdr=df[,2])
-	res <- rbind(res[which(res$fdr >= fdrcut) | which(abs(res$logfc) < lfccut),],
-				 res[which(res$fdr < fdrcut) & which(abs(res$logfc) >= lfccut),])
+	res <- res[with(res,order(-fdr)),]
+	
     	#set colours
     	col <- ifelse(is.na(res$fdr) | res$fdr >= fdrcut | abs(res$logfc) < lfccut,
                       pal[1],pal[2])
@@ -36,6 +36,6 @@ ggVplot <- function(df, fdrcut = 0.1, lfccut = 1.0, xlim = c(-2,2), ylim = c(0,7
            	xlim(xlim[1],xlim[2]) +
 		geom_vline(aes(xintercept=lfcthresh,colour="lfcthresh"), linetype = "dashed") + 
 		geom_vline(aes(xintercept=-lfcthresh,colour="lfcthresh"), linetype = "dashed") + 
-		geom_hline(aes(yintercept=pthresh,colour="pthresh")) + 
+		geom_hline(aes(yintercept=-log10(pthresh),colour="pthresh")) + 
 		scale_color_manual(values=pal, ...)
 }
