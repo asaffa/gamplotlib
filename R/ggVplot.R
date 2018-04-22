@@ -1,6 +1,6 @@
 #TODO - annotate names of sig results
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-# R function for making a Volcano plot with ggplot2
+# R ggplot2 function for making a volcano plot 
 #
 #input: dataframe with columns for p-val, adjusted p val, and lfc (in that order)
 #ggplot object

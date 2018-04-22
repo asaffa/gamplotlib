@@ -1,8 +1,8 @@
-TODO - genomic inflation
-TODO - calculate expected using ppoints
-TODO - option to color sig points
+#TODO - genomic inflation
+#TODO - calculate expected using ppoints
+#TODO - option to color sig points
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-# R function to produce QQ plot using ggplot
+# R ggplot2 function for making a QQ plot
 #
 #input: vector of p-values
 #ggplot object
