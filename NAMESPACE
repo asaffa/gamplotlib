@@ -1,1 +1,3 @@
 exportPattern(".")
+exportMethods(ggQQplot,ggPCplot,ggVplot)
+import(ggplot2,ggthemes)
