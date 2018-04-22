@@ -39,4 +39,4 @@ theme_gamplotlib <- function(){
 
 #test
 #ggQQplot(ppoints(100)) + theme_gamplotlib()
-#ggPCAplot(pdata,c(1,2),batch="Sex",xlim = c(-1,1),ylim = c(-1,1)) + theme_gamplotlib() + #scale_fill_gamplotlib() + scale_color_gamplotlib()
+#ggPCplot(data.frame(PC1=rnorm(50,0,1),PC2=rnorm(50,0,0.25),batch=c(rep(1,25),rep(2,25))),c(1,2),batch="batch",xlim = c(-1,1),ylim = c(-1,1)) + theme_gamplotlib() + scale_fill_gamplotlib() + scale_color_gamplotlib()
