@@ -32,8 +32,9 @@ scale_fill_gradient_gamplotlib <- function(){
 
 theme_gamplotlib <- function(){
 	theme_bw() + 
-	theme(panel.grid.major = element_line(colour="#F6F7F7"),
-	panel.grid.minor = element_line(colour="#F6F7F7"))
+	theme(text=element_text(size=16, family="Helvetica"),
+	      panel.grid.major = element_line(colour="#F6F7F7"),
+              panel.grid.minor = element_line(colour="#F6F7F7"))
 }
 
 
