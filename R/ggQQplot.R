@@ -1,5 +1,4 @@
 #TODO - genomic inflation
-#TODO - calculate expected using ppoints
 #TODO - option to color sig points
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 # R ggplot2 function for making a QQ plot
@@ -16,7 +15,7 @@ ggQQplot <- function(ps, ylim = c(0,5)) {
 	N <- length(ps)
 	df <- data.frame(observed=-log10(sort(ps)),
 	                 trimmed=-log10(pmax(1/10^(ylim[2]),((sort(ps))))),
-                     expected=-log10(1:N/N))
+                     expected=-log10(ppoints(N)))
 
     #set shapes
     pch <- ifelse(df$trimmed >= ylim[2], 24, 21)
@@ -34,3 +33,4 @@ ggQQplot <- function(ps, ylim = c(0,5)) {
            ylim(ylim[1],ylim[2]) +
            xlim(ylim[1],ylim[2])
 }
+
