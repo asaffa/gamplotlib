@@ -1,4 +1,3 @@
-#TODO - genomic inflation
 #TODO - option to color sig points
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 # R ggplot2 function for making a QQ plot
