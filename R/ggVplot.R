@@ -36,6 +36,6 @@ ggVplot <- function(df, fdrcut = 0.1, lfccut = 1.0, xlim = c(-2,2), ylim = c(0,7
            	xlim(xlim[1],xlim[2]) +
 		geom_vline(aes(xintercept=lfcthresh,colour="lfcthresh"), linetype = "dashed") + 
 		geom_vline(aes(xintercept=-lfcthresh,colour="lfcthresh"), linetype = "dashed") + 
-		geom_hline(aes(yintercept=-log10(pthresh),colour="pthresh")) + 
+		geom_hline(aes(yintercept=-log10(pthresh),colour="pthresh"),linetype = "dashed") + 
 		scale_color_manual(values=pal, ...)
 }
