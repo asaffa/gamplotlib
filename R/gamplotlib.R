@@ -30,11 +30,35 @@ scale_fill_gradient_gamplotlib <- function(){
   ))	
 }
 
-theme_gamplotlib <- function(){
-	theme_bw() + 
-	theme(text=element_text(size=12, family="Helvetica"),
-	      panel.grid.major = element_line(colour="#F6F7F7"),
-              panel.grid.minor = element_line(colour="#F6F7F7"))
+theme_gamplotlib <- function(base_size = 10, base_family = "Helvetica", 
+			     base_line_size = 0.5, base_rect_size = 0.5){
+
+    half_line <- base_size / 2
+	
+    theme_bw(
+    base_size = base_size,
+    base_family = base_family,
+    base_line_size = base_line_size,
+    base_rect_size = base_rect_size) %+replace%
+    theme(
+      # no background
+      panel.border     = element_blank(),
+      panel.grid.major = element_line(colour="#DEE3E9",size = rel(0.5)),
+      panel.grid.minor = element_line(colour="#DEE3E9",size = rel(0.25)),
+
+      # show axes
+      axis.line      = element_line(colour = "black", lineend = "square", size = rel(1)),
+
+      # match legend key to panel.background
+      legend.key       = element_blank(),
+
+      # simple, black and white strips
+      strip.background = element_rect(fill = "white", colour = "black", size = rel(2)),
+      # NB: size is 1 but clipped, it looks like the 0.5 of the axes
+
+      complete = TRUE
+    ) 
+
 }
 
 
