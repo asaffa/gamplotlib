@@ -2,11 +2,10 @@
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 # R ggplot2 function for making a volcano plot 
 #
-#input: dataframe with columns for p-val, adjusted p val, and lfc (in that order)
-#ggplot object
+# input: dataframe with columns for p-val, adjusted p val, and lfc (in that order)
+# output: ggplot object
 #
-# author. Ayden Saffari <ayden.saffari@lshtm.ac.uk>
-# affiliations. MRC ING, LSHTM, BBK
+# author. github/asaffa
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 
 ggVplot <- function(df, fdrcut = 0.1, lfccut = 1.0, xlim = c(-2,2), ylim = c(0,7),pthresh = 0.05, lfcthresh = 0.02, ...){   
