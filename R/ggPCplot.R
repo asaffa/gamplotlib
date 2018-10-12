@@ -1,8 +1,7 @@
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #  R ggplot2 function for making a scatter plot of principal component scores
 #
-# author. Ayden Saffari <ayden.saffari@lshtm.ac.uk>
-# affiliations. MRC ING, LSHTM, BBK
+# author. github/asaffa
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 
 ggPCplot <- function(df,pcs=c(1,2),batch="Sex",xlim = c(-500,500),
