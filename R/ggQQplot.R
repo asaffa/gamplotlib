@@ -2,11 +2,10 @@
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 # R ggplot2 function for making a QQ plot
 #
-#input: vector of p-values
-#ggplot object
+# input: vector of p-values
+# ggplot object
 #
-# author. Ayden Saffari <ayden.saffari@lshtm.ac.uk>
-# affiliations. MRC ING, LSHTM, BBK
+# author. github/asaffa
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 
 ggQQplot <- function(ps, ylim = c(0,5)) {
