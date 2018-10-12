@@ -3,7 +3,7 @@
 # R ggplot2 function for making a QQ plot
 #
 # input: vector of p-values
-# ggplot object
+# output: ggplot object
 #
 # author. github/asaffa
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
