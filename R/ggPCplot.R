@@ -4,7 +4,7 @@
 # author. asaffa
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 
-ggPCplot <- function(df,pcs=c(1,2),batch="Sex",xlim = c(-500,500),
+ggPCplot <- function(df,pcs=c(1,2),batch="Batch",xlim = c(-500,500),
                       ylim = c(-500,500)) {
 
 	#x and y labels
