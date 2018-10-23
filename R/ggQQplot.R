@@ -5,7 +5,7 @@
 # input: vector of p-values
 # output: ggplot object
 #
-# author. github/asaffa
+# author. asaffa
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 
 ggQQplot <- function(ps, ylim = c(0,5)) {
