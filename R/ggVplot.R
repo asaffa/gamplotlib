@@ -5,7 +5,7 @@
 # input: dataframe with columns for p-val, adjusted p val, and lfc (in that order)
 # output: ggplot object
 #
-# author. github/asaffa
+# author. asaffa
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 
 ggVplot <- function(df, fdrcut = 0.1, lfccut = 1.0, xlim = c(-2,2), ylim = c(0,7),pthresh = 0.05, lfcthresh = 0.02, ...){   
